@@ -3,10 +3,10 @@ type Env = {
 };
 
 type Place = {
-  hotel_info: HotelInfo,
+  place_type: string,
+  place_info: HotelInfo,
   weather: Weather,
   social_info: SocialInfo,
-  type: PlaceType[]
 };
 
 type PlaceType = {

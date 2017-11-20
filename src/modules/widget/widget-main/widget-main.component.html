@@ -6,7 +6,7 @@
   <div class="ele-strip">
     <ul>
       <li *ngFor="let type of placeTypes">
-        <a href="#">{{type.title}}</a>
+        <a class="link" (click)="changePlaceType(type.title)">{{type.title}}</a>
       </li>
     </ul>
   </div>

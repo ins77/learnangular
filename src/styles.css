@@ -75,6 +75,10 @@ h1 {
   padding: 0em 0.5em;
   border-right: 1px solid #fff;
 }
+
+.ele-strip ul li:last-of-type {
+  border-right: none;
+}
 .ele-strip ul li a{
   font-size:1em;
   color: #fff;
@@ -131,6 +135,8 @@ span.w-line {
   border-right: 1px solid #000;
 }
 .element-bg-img img {
+  width: 100%;
+  vertical-align: top;
   border-radius: 6px 6px 0px 0px;
 }
 span.cloud {
@@ -235,6 +241,9 @@ i.text-info{
 .activity_box{
   background: #fff;
   min-height: 120px;
+}
+.link {
+  cursor: pointer;
 }
 #style-2::-webkit-scrollbar-track
 {

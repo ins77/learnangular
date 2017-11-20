@@ -1,8 +1,8 @@
-<ng-container *ngIf="(places$ | async) as places">
+<ng-container *ngIf="places">
   <h1>Hot Weather Widget</h1>
   <div class="element">
     <div class="element-left">
-      <course-widget-main [hotel]="places[0].hotel_info" [placeTypes]="places[0].type"></course-widget-main>
+      <course-widget-main [hotel]="places[0].place_info" [placeTypes]="placeTypes$ | async" (changePlace)="changePlace($event)"></course-widget-main>
     </div>
     <div class="element-right">
       <course-widget-weather [weather]="places[0].weather"></course-widget-weather>
@@ -14,4 +14,6 @@
     <p>© 2015 Hot Weather Widget. All rights reserved | Design by  <a href="http://w3layouts.com/" target="_blank">  W3layouts </a></p>
   </div>
 </ng-container>
+
+
 
