@@ -6,7 +6,7 @@ type Place = {
   place_type: string,
   place_info: HotelInfo,
   weather: Weather,
-  social_info: SocialInfo,
+  social_info: SocialInfo
 };
 
 type PlaceType = {

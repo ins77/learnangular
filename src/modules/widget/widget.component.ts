@@ -8,7 +8,7 @@ import { places$, placeTypes$ } from '../../data';
 })
 export class WidgetComponent implements OnInit {
   public places: Place[];
-  public placeTypes$: Observable<PlaceTypes[]>;
+  public placeTypes$: Observable<PlaceType[]>;
 
   public ngOnInit(): void {
     places$.subscribe((places: Place[]) => {

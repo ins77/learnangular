@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class WidgetMainComponent {
   @Output()
-  public changePlace: EventEmitter = new EventEmitter<string>();
+  public changePlace: EventEmitter<string> = new EventEmitter<string>();
   @Input()
   public hotel: HotelInfo;
   @Input()

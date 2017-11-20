@@ -113,21 +113,7 @@ const places: Place[] = [
       img: 'assets/images/b1.jpg',
       followers: 20,
       following: 20
-    },
-    type: [
-      {
-        title: 'Hotel'
-      },
-      {
-        title: 'Fishing'
-      },
-      {
-        title: 'Tours'
-      },
-      {
-        title: 'Health'
-      }
-    ]
+    }
   },
   {
     place_type: 'Tours',
@@ -183,21 +169,7 @@ const places: Place[] = [
       img: 'assets/images/b1.jpg',
       followers: 30,
       following: 30
-    },
-    type: [
-      {
-        title: 'Hotel'
-      },
-      {
-        title: 'Fishing'
-      },
-      {
-        title: 'Tours'
-      },
-      {
-        title: 'Health'
-      }
-    ]
+    }
   },
   {
     place_type: 'Health',
@@ -253,21 +225,7 @@ const places: Place[] = [
       img: 'assets/images/b1.jpg',
       followers: 40,
       following: 40
-    },
-    type: [
-      {
-        title: 'Hotel'
-      },
-      {
-        title: 'Fishing'
-      },
-      {
-        title: 'Tours'
-      },
-      {
-        title: 'Health'
-      }
-    ]
+    }
   }
 ];
 
