@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormatPhonePipe } from '../shared/pipes/formatPhone.pipe';
+import { PlacesFilterPipe } from '../shared/pipes/placesFilter.pipe';
+import { WidgetService } from './widget.service';
 import { WidgetComponent } from './widget.component';
-import { WidgetInfoComponent } from './widget-info/widget-info.component';
+import { WidgetSocialComponent } from './widget-social/widget-social.component';
 import { WidgetWeatherComponent } from './widget-weather/widget-weather.component';
 import { WidgetMainComponent } from './widget-main/widget-main.component';
 import { WidgetPlacesComponent } from './widget-place/widget-places.component';
-import { PlacesFilterPipe } from '../shared/pipes/placesFilter.pipe';
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import { PlacesFilterPipe } from '../shared/pipes/placesFilter.pipe';
   declarations: [
     WidgetComponent,
     WidgetMainComponent,
-    WidgetInfoComponent,
+    WidgetSocialComponent,
     WidgetWeatherComponent,
     WidgetPlacesComponent,
     FormatPhonePipe,
@@ -23,6 +24,9 @@ import { PlacesFilterPipe } from '../shared/pipes/placesFilter.pipe';
   ],
   exports: [
     WidgetComponent
+  ],
+  providers: [
+    WidgetService
   ]
 })
 export class WidgetModule { }

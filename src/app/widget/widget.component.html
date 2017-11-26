@@ -1,11 +1,11 @@
 <h1>Hot Weather Widget</h1>
-<div class="element">
+<div *ngIf="places" class="element">
   <div class="element-left">
-    <course-widget-main [places]="places" (setPlace)="changePlace($event)"></course-widget-main>
+    <course-widget-main [places]="places"></course-widget-main>
   </div>
   <div class="element-right">
-    <course-widget-weather [weather]="place.weather"></course-widget-weather>
-    <course-widget-info [social]="place.social" [photo]="place.photos[1].img"></course-widget-info>
+    <course-widget-weather></course-widget-weather>
+    <course-widget-social></course-widget-social>
   </div>
   <div class="clear"> </div>
 </div>

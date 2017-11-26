@@ -1,8 +1,4 @@
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/observable/of';
-import 'rxjs/add/operator/delay';
-
-const places: Place[] = [
+export const places: Place[] = [
   {
     type: 'Hotel',
     address: 'Sed perspiciatis Et harum quidem',
@@ -245,7 +241,7 @@ const places: Place[] = [
   }
 ];
 
-const placeTypes: PlaceType[] = [
+export const placeTypes: PlaceType[] = [
   {
     title: 'Hotel'
   },
@@ -259,9 +255,3 @@ const placeTypes: PlaceType[] = [
     title: 'Health'
   }
 ];
-
-export const places$: Observable<Place[]> =
-  Observable.of(places);
-
-export const placeTypes$: Observable<PlaceType[]> =
-  Observable.of(placeTypes);

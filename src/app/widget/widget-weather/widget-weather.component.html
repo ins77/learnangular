@@ -1,7 +1,7 @@
-<div class="temperatur">
-  <h5>{{placeWeather.title}}</h5>
+<div *ngIf="weather" class="temperatur">
+  <h5>{{weather.title}}</h5>
   <span class="w-line"></span>
-  <span class="cloud" [style.background]="'url(' + placeWeather.icon + ') no-repeat'"></span>
-  <h2>{{placeWeather.temperature}}<sup class="degree">°</sup></h2>
-  <h6>Water {{placeWeather.water}}<sup class="degree">°</sup></h6>
+  <span class="cloud" [style.background]="'url(' + weather.icon + ') no-repeat'"></span>
+  <h2>{{weather.temperature}}<sup class="degree">°</sup></h2>
+  <h6>Water {{weather.water}}<sup class="degree">°</sup></h6>
 </div>

@@ -1,22 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { places$ } from '../../data';
+import { WidgetService } from './widget.service';
 
 @Component({
   selector: 'course-widget',
   templateUrl: './widget.component.html'
 })
 export class WidgetComponent implements OnInit {
-  public place: Place;
   public places: Place[];
 
-  public ngOnInit(): void {
-    places$.subscribe((places: Place[]) => {
-      this.places = places;
-      this.place = places[0];
-    });
-  }
+  public constructor(private widgetService: WidgetService) {}
 
-  public changePlace(place: Place): void {
-    this.place = place;
+  public ngOnInit(): void {
+    this.widgetService.getPlaces()
+      .subscribe((places: Place[]) => {
+        this.places = places;
+      });
   }
 }
