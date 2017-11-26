@@ -4,225 +4,241 @@ import 'rxjs/add/operator/delay';
 
 const places: Place[] = [
   {
-    place_type: 'Hotel',
-    place_info: {
-      img: 'assets/images/1.jpg',
-      contacts: [
-        {
-          address: 'Sed perspiciatis Et harum quidem',
-          phone: 1285968685,
-          photos: [
-            {
-              img: 'assets/images/res.jpg'
-            },
-            {
-              img: 'assets/images/r1.jpg'
-            }
-          ]
-        },
-        {
-          address: 'Sed perspiciatis Et harum quidem',
-          phone: 1285968685,
-          photos: [
-            {
-              img: 'assets/images/res.jpg'
-            },
-            {
-              img: 'assets/images/r1.jpg'
-            }
-          ]
-        },
-        {
-          address: 'Sed perspiciatis Et harum quidem',
-          phone: 1285968685,
-          photos: [
-            {
-              img: 'assets/images/res.jpg'
-            },
-            {
-              img: 'assets/images/r1.jpg'
-            }
-          ]
-        },
-      ]
-    },
+    type: 'Hotel',
+    address: 'Sed perspiciatis Et harum quidem',
+    phone: 1285968685,
+    photos: [
+      {
+        img: 'assets/images/1.jpg'
+      },
+      {
+        img: 'assets/images/1-2.jpg'
+      }
+    ],
     weather: {
       title: 'Et harum quidem',
       icon: 'assets/images/cloudy.png',
       water: 5,
       temperature: -5
     },
-    social_info: {
+    social: {
       title: 'Nam libero voluptatem',
-      img: 'assets/images/b1.jpg',
       followers: 10,
       following: 10
     }
   },
   {
-    place_type: 'Fishing',
-    place_info: {
-      img: 'assets/images/2.jpg',
-      contacts: [
-        {
-          address: 'Sed perspiciatis Et harum quidem',
-          phone: 1285968685,
-          photos: [
-            {
-              img: 'assets/images/res.jpg'
-            },
-            {
-              img: 'assets/images/r1.jpg'
-            }
-          ]
-        },
-        {
-          address: 'Sed perspiciatis Et harum quidem',
-          phone: 1285968685,
-          photos: [
-            {
-              img: 'assets/images/res.jpg'
-            },
-            {
-              img: 'assets/images/r1.jpg'
-            }
-          ]
-        },
-        {
-          address: 'Sed perspiciatis Et harum quidem',
-          phone: 1285968685,
-          photos: [
-            {
-              img: 'assets/images/res.jpg'
-            },
-            {
-              img: 'assets/images/r1.jpg'
-            }
-          ]
-        },
-      ]
+    type: 'Hotel',
+    address: 'Sed perspiciatis Et harum quidem',
+    phone: 1285968685,
+    photos: [
+      {
+        img: 'assets/images/2.jpg'
+      },
+      {
+        img: 'assets/images/2-2.jpg'
+      }
+    ],
+    weather: {
+      title: 'Et harum quidem',
+      icon: 'assets/images/cloudy.png',
+      water: 15,
+      temperature: -15
     },
+    social: {
+      title: 'Nam libero voluptatem',
+      followers: 101,
+      following: 101
+    }
+  },
+  {
+    type: 'Fishing',
+    address: 'Sed perspiciatis Et harum quidem',
+    phone: 1285968685,
+    photos: [
+      {
+        img: 'assets/images/2.jpg'
+      },
+      {
+        img: 'assets/images/2-2.jpg'
+      }
+    ],
     weather: {
       title: 'Et harum quidem',
       icon: 'assets/images/cloudy.png',
       water: 25,
       temperature: 90
     },
-    social_info: {
+    social: {
       title: 'Nam libero voluptatem',
-      img: 'assets/images/b1.jpg',
       followers: 20,
       following: 20
     }
   },
   {
-    place_type: 'Tours',
-    place_info: {
-      img: 'assets/images/4.jpg',
-      contacts: [
-        {
-          address: 'Sed perspiciatis Et harum quidem',
-          phone: 1285968685,
-          photos: [
-            {
-              img: 'assets/images/res.jpg'
-            },
-            {
-              img: 'assets/images/r1.jpg'
-            }
-          ]
-        },
-        {
-          address: 'Sed perspiciatis Et harum quidem',
-          phone: 1285968685,
-          photos: [
-            {
-              img: 'assets/images/res.jpg'
-            },
-            {
-              img: 'assets/images/r1.jpg'
-            }
-          ]
-        },
-        {
-          address: 'Sed perspiciatis Et harum quidem',
-          phone: 1285968685,
-          photos: [
-            {
-              img: 'assets/images/res.jpg'
-            },
-            {
-              img: 'assets/images/r1.jpg'
-            }
-          ]
-        },
-      ]
+    type: 'Fishing',
+    address: 'Sed perspiciatis Et harum quidem',
+    phone: 1285968685,
+    photos: [
+      {
+        img: 'assets/images/3.jpg'
+      },
+      {
+        img: 'assets/images/3-2.jpg'
+      }
+    ],
+    weather: {
+      title: 'Et harum quidem',
+      icon: 'assets/images/cloudy.png',
+      water: 250,
+      temperature: 900
     },
+    social: {
+      title: 'Nam libero voluptatem',
+      followers: 200,
+      following: 200
+    }
+  },
+  {
+    type: 'Tours',
+    address: 'Sed perspiciatis Et harum quidem',
+    phone: 1285968685,
+    photos: [
+      {
+        img: 'assets/images/4.jpg'
+      },
+      {
+        img: 'assets/images/4-2.jpg'
+      }
+    ],
+    weather: {
+      title: 'Et harum quidem',
+      icon: 'assets/images/cloudy.png',
+      water: 30,
+      temperature: 42
+    },
+    social: {
+      title: 'Nam libero voluptatem',
+      followers: 304,
+      following: 304
+    }
+  },
+  {
+    type: 'Tours',
+    address: 'Sed perspiciatis Et harum quidem',
+    phone: 1285968685,
+    photos: [
+      {
+        img: 'assets/images/1.jpg'
+      },
+      {
+        img: 'assets/images/1-2.jpg'
+      }
+    ],
     weather: {
       title: 'Et harum quidem',
       icon: 'assets/images/cloudy.png',
       water: 320,
       temperature: 442
     },
-    social_info: {
+    social: {
       title: 'Nam libero voluptatem',
-      img: 'assets/images/b1.jpg',
       followers: 30,
       following: 30
     }
   },
   {
-    place_type: 'Health',
-    place_info: {
-      img: 'assets/images/3.jpg',
-      contacts: [
-        {
-          address: 'Sed perspiciatis Et harum quidem',
-          phone: 1285968685,
-          photos: [
-            {
-              img: 'assets/images/res.jpg'
-            },
-            {
-              img: 'assets/images/r1.jpg'
-            }
-          ]
-        },
-        {
-          address: 'Sed perspiciatis Et harum quidem',
-          phone: 1285968685,
-          photos: [
-            {
-              img: 'assets/images/res.jpg'
-            },
-            {
-              img: 'assets/images/r1.jpg'
-            }
-          ]
-        },
-        {
-          address: 'Sed perspiciatis Et harum quidem',
-          phone: 1285968685,
-          photos: [
-            {
-              img: 'assets/images/res.jpg'
-            },
-            {
-              img: 'assets/images/r1.jpg'
-            }
-          ]
-        },
-      ]
+    type: 'Tours',
+    address: 'Sed perspiciatis Et harum quidem',
+    phone: 1285968685,
+    photos: [
+      {
+        img: 'assets/images/3.jpg'
+      },
+      {
+        img: 'assets/images/3-2.jpg'
+      }
+    ],
+    weather: {
+      title: 'Et harum quidem',
+      icon: 'assets/images/cloudy.png',
+      water: 32,
+      temperature: 44
     },
+    social: {
+      title: 'Nam libero voluptatem',
+      followers: 3,
+      following: 3
+    }
+  },
+  {
+    type: 'Health',
+    address: 'Sed perspiciatis Et harum quidem',
+    phone: 1285968685,
+    photos: [
+      {
+        img: 'assets/images/3.jpg'
+      },
+      {
+        img: 'assets/images/3-2.jpg'
+      }
+    ],
+    weather: {
+      title: 'Et harum quidem',
+      icon: 'assets/images/cloudy.png',
+      water: 440,
+      temperature: 41
+    },
+    social: {
+      title: 'Nam libero voluptatem',
+      followers: 40,
+      following: 40
+    }
+  },
+  {
+    type: 'Health',
+    address: 'Sed perspiciatis Et harum quidem',
+    phone: 1285968685,
+    photos: [
+      {
+        img: 'assets/images/1.jpg'
+      },
+      {
+        img: 'assets/images/1-2.jpg'
+      }
+    ],
+    weather: {
+      title: 'Et harum quidem',
+      icon: 'assets/images/cloudy.png',
+      water: 2012,
+      temperature: 1412
+    },
+    social: {
+      title: 'Nam libero voluptatem',
+      followers: 40,
+      following: 40
+    }
+  },
+  {
+    type: 'Health',
+    address: 'Sed perspiciatis Et harum quidem',
+    phone: 1285968685,
+    photos: [
+      {
+        img: 'assets/images/4.jpg'
+      },
+      {
+        img: 'assets/images/4-2.jpg'
+      }
+    ],
     weather: {
       title: 'Et harum quidem',
       icon: 'assets/images/cloudy.png',
       water: 20,
       temperature: 14
     },
-    social_info: {
+    social: {
       title: 'Nam libero voluptatem',
-      img: 'assets/images/b1.jpg',
       followers: 40,
       following: 40
     }

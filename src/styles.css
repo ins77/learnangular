@@ -110,7 +110,9 @@ span.w-line {
   color: #fff;
 }
 .teddy-text img {
-  border-radius: 70px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
   border: 3px solid #fff;
 }
 .teddy-follow {
@@ -229,14 +231,23 @@ i.text-info{
   margin: 13px 0 0 0;
   font-weight: bold;
 }
+
 .activity-row{
-  margin-bottom:1em;
+  padding: 5px;
+  margin-bottom: 1em;
+  border-radius: 3px;
+  cursor: pointer;
 }
+
+.activity-row:hover{
+  background-color: #eee;
+}
+
 .scrollbar{
   height:115px;
   background:#fff;
   overflow-y: scroll;
-  padding: 1em 1em 0em 1em;
+  padding: 11px 11px 0 11px;
 }
 .activity_box{
   background: #fff;
@@ -271,10 +282,22 @@ i.text-info{
   width: 50%;
 }
 .activity-img ul li {
+  position: relative;
   display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius:100%;
+  overflow: hidden;
+  margin-left: 10px;
+  padding-right: 1px;
 }
 .activity-img ul li img{
-  border-radius:50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 150%;
+  height: 150%;
 }
 /*--village start here--*/
 .village {

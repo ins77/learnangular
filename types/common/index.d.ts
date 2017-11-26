@@ -3,25 +3,12 @@ type Env = {
 };
 
 type Place = {
-  place_type: string,
-  place_info: HotelInfo,
-  weather: Weather,
-  social_info: SocialInfo
-};
-
-type PlaceType = {
-  title: string
-};
-
-type HotelInfo = {
-  img: string,
-  contacts: Contact[]
-};
-
-type Contact = {
+  type: string,
   address: string,
-  phone: number, // дополнительно задание pipe для форматирования
-  photos: Photo[]
+  phone: number,
+  photos: Photo[],
+  weather: Weather,
+  social: SocialInfo
 };
 
 type Photo = {
@@ -37,7 +24,10 @@ type Weather = {
 
 type SocialInfo = {
   title: string,
-  img: string,
   followers: number,
   following: number
+};
+
+type PlaceType = {
+  title: string
 };

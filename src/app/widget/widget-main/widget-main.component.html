@@ -1,0 +1,23 @@
+<div class="element-bg-img">
+  <img [src]="place.photos[0].img" alt="" class="img-responsive">
+</div>
+
+<div class="element-left-bottom">
+  <div class="ele-strip">
+    <ul>
+      <li *ngFor="let type of placeTypes$ | async">
+        <a class="link" (click)="changeType(type.title)">{{type.title}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="village">
+    <h3>Righteous indignation & like</h3>
+    <span class="line"> </span>
+    <div class="activity_box">
+      <div class="scrollbar" id="style-2">
+        <course-widget-places [places]="places | placesFilter:placeType"
+                              (changePlace)="changePlace($event)"></course-widget-places>
+      </div>
+    </div>
+  </div>
+</div>

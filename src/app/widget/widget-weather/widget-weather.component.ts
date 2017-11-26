@@ -6,5 +6,9 @@ import { Component, Input } from '@angular/core';
 })
 export class WidgetWeatherComponent {
   @Input()
-  public weather: Weather;
+  public set weather(value: Weather) {
+    this.placeWeather = value;
+  }
+
+  public placeWeather: Weather;
 }

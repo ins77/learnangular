@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { WidgetModule } from '../modules/widget/widget.module';
+import { WidgetModule } from './widget/widget.module';
 
 @NgModule({
   declarations: [
