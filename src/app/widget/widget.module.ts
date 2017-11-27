@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { InitDirective } from '../shared/directives/init.directive';
 import { FormatPhonePipe } from '../shared/pipes/formatPhone.pipe';
 import { PlacesFilterPipe } from '../shared/pipes/placesFilter.pipe';
 import { WidgetService } from './widget.service';
@@ -20,7 +21,8 @@ import { WidgetPlacesComponent } from './widget-place/widget-places.component';
     WidgetWeatherComponent,
     WidgetPlacesComponent,
     FormatPhonePipe,
-    PlacesFilterPipe
+    PlacesFilterPipe,
+    InitDirective
   ],
   exports: [
     WidgetComponent

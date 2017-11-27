@@ -1,4 +1,9 @@
-<div *ngFor="let place of places" class="activity-row" (click)="selectPlace(place)">
+<div *ngFor="let place of places; first as f"
+     class="activity-row"
+     widgetInit
+     [first]="f"
+     [place]="place"
+     (click)="selectPlace(place)">
   <div class="activity-desc">
     <h5>Resort Address</h5>
     <p>{{place.address}}</p>
